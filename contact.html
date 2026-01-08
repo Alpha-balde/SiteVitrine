@@ -8,7 +8,7 @@
         content="Contactez BatiPro pour vos projets de maçonnerie. Devis gratuit et conseils professionnels.">
     <meta name="keywords" content="contact, devis, maçonnerie, BatiPro, bâtiment">
     <meta name="author" content="BatiPro">
-    <title>BatiPro - Maçonnerie Professionnelle | Contact</title>
+    <title>BatiPro - Contact</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,57 +22,47 @@
 </head>
 
 <body>
+
     <!-- Header -->
-    <header id="header" class="header">
+    <header class="header">
         <div class="container">
             <nav class="navbar">
-                <!-- Logo -->
                 <a href="index.html" class="logo">
                     <span class="logo-icon">🏗️</span>
                     <span class="logo-text">Bati<span class="logo-accent">Pro</span></span>
                 </a>
 
-                <!-- Navigation Links -->
-                <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link active">Contact</a>
-                    </li>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
                 </ul>
 
-                <!-- CTA Button -->
                 <a href="#contact-form" class="btn btn-primary nav-cta">
                     <span class="btn-icon">📞</span>
                     Devis Gratuit
                 </a>
-
-                <!-- Mobile Menu Button -->
-                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-                    <span class="hamburger"></span>
-                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Contact Section -->
-        <section id="contact" class="section-padding">
+    <!-- Main -->
+    <main>
+
+        <!-- Contact -->
+        <section class="section-padding">
             <div class="container">
+
                 <div class="section-header">
                     <h1 class="section-title">Contactez-nous</h1>
                     <p class="section-subtitle">
-                        Prêt à réaliser votre projet ? Contactez BatiPro pour un devis gratuit et personnalisé.
+                        Un projet en tête ? Contactez BatiPro pour un devis gratuit et personnalisé.
                     </p>
                 </div>
 
                 <div class="contact-grid">
-                    <!-- Contact Info -->
+
+                    <!-- Infos -->
                     <div class="contact-info">
                         <h2>Informations de contact</h2>
                         <div class="contact-details">
@@ -84,6 +74,7 @@
                                     75001 Paris, France
                                 </div>
                             </div>
+
                             <div class="contact-item">
                                 <span class="contact-icon">📞</span>
                                 <div>
@@ -91,6 +82,7 @@
                                     <a href="tel:+33123456789">01 23 45 67 89</a>
                                 </div>
                             </div>
+
                             <div class="contact-item">
                                 <span class="contact-icon">✉️</span>
                                 <div>
@@ -98,146 +90,114 @@
                                     <a href="mailto:contact@batipro.fr">contact@batipro.fr</a>
                                 </div>
                             </div>
+
                             <div class="contact-item">
                                 <span class="contact-icon">🕐</span>
                                 <div>
                                     <strong>Horaires</strong><br>
-                                    Lundi - Vendredi : 8h - 18h<br>
-                                    Samedi : 9h - 12h
+                                    Lun - Ven : 8h - 18h<br>
+                                    Sam : 9h - 12h
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Contact Form -->
+                    <!-- Form -->
                     <div class="contact-form" id="contact-form">
                         <h2>Envoyez-nous un message</h2>
-                        <form class="form" action="#" method="post">
+
+                        <form class="form">
                             <div class="form-group">
                                 <label for="name">Nom complet *</label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" required>
                             </div>
+
                             <div class="form-group">
                                 <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" required>
                             </div>
+
                             <div class="form-group">
                                 <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone">
+                                <input type="tel" id="phone">
                             </div>
-                            <div class="form-group">
-                                <label for="subject">Sujet</label>
-                                <select id="subject" name="subject">
-                                    <option value="">Choisissez un sujet</option>
-                                    <option value="construction">Construction neuve</option>
-                                    <option value="renovation">Rénovation</option>
-                                    <option value="extension">Extension</option>
-                                    <option value="devis">Demande de devis</option>
-                                    <option value="autre">Autre</option>
-                                </select>
-                            </div>
+
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="6" required></textarea>
+                                <textarea id="message" rows="6" required></textarea>
                             </div>
+
                             <button type="submit" class="btn btn-primary btn-lg">
                                 <span class="btn-icon">📤</span>
-                                Envoyer le message
+                                Envoyer
                             </button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
+
+        <!-- Map -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Nous trouver</h2>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps?q=Paris&output=embed"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="footer">
+    <footer class="footer">
         <div class="container">
-            <!-- Footer Main -->
+
             <div class="footer-grid">
-                <!-- Column 1: Logo & Description -->
-                <div class="footer-col footer-about">
+                <div class="footer-about">
                     <a href="index.html" class="footer-logo">
                         <span class="logo-icon">🏗️</span>
                         <span class="logo-text">Bati<span class="logo-accent">Pro</span></span>
                     </a>
                     <p class="footer-description">
                         Votre partenaire de confiance pour tous vos projets de maçonnerie.
-                        Construction, rénovation et extension depuis plus de 15 ans.
                     </p>
-                    <!-- Social Links -->
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <span>📘</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <span>📷</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <span>💼</span>
-                        </a>
-                    </div>
                 </div>
 
-                <!-- Column 2: Quick Links -->
-                <div class="footer-col">
-                    <h4 class="footer-title">Liens Rapides</h4>
+                <div>
+                    <h4 class="footer-title">Liens</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="about.html">À propos</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#contact-form">Demander un devis</a></li>
                     </ul>
                 </div>
 
-                <!-- Column 3: Services -->
-                <div class="footer-col">
-                    <h4 class="footer-title">Nos Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Construction neuve</a></li>
-                        <li><a href="#">Rénovation</a></li>
-                        <li><a href="#">Extension</a></li>
-                        <li><a href="#">Terrassement</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Contact Info -->
-                <div class="footer-col">
+                <div>
                     <h4 class="footer-title">Contact</h4>
                     <ul class="footer-contact">
-                        <li>
-                            <span class="contact-icon">📍</span>
-                            <span>12 Rue du Bâtiment, 75001 Paris</span>
-                        </li>
-                        <li>
-                            <span class="contact-icon">📞</span>
-                            <a href="tel:+33123456789">01 23 45 67 89</a>
-                        </li>
-                        <li>
-                            <span class="contact-icon">✉️</span>
-                            <a href="mailto:contact@batipro.fr">contact@batipro.fr</a>
-                        </li>
-                        <li>
-                            <span class="contact-icon">🕐</span>
-                            <span>Lun - Ven : 8h - 18h</span>
-                        </li>
+                        <li><span class="contact-icon">📍</span> Paris, France</li>
+                        <li><span class="contact-icon">📞</span> 01 23 45 67 89</li>
+                        <li><span class="contact-icon">✉️</span> contact@batipro.fr</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <p>&copy; 2026 BatiPro. Tous droits réservés.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 
