@@ -866,7 +866,6 @@ select {
     border-bottom: 2px solid var(--color-white);
     transform: rotate(45deg);
 }
-
 /* Animations */
 @keyframes fadeInDown {
     from {
