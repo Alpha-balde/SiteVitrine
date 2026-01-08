@@ -1,34 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contactez BatiPro pour vos projets de maçonnerie. Devis gratuit, réponse rapide. Appelez-nous ou remplissez le formulaire.">
+  <meta name="keywords" content="contact, devis, maçonnerie, BatiPro, bâtiment, maçon">
+  <meta name="author" content="BatiPro">
+  <title>Contact | BatiPro - Maçonnerie Professionnelle</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🏗️</span>
+          <span class="logo-text">Bati<span class="logo-accent">Pro</span></span>
+        </a>
 
-  <h1>Contact Us</h1>
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
 
-  <form>
-    <label>
-      Name:<br>
-      <input type="text" name="name">
-    </label>
-    <br><br>
+        <!-- CTA Button -->
+        <a href="contact.html" class="btn btn-primary nav-cta">
+          <span class="btn-icon">📞</span>
+          Devis Gratuit
+        </a>
 
-    <label>
-      Email:<br>
-      <input type="email" name="email">
-    </label>
-    <br><br>
+        <!-- Mobile Menu Button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    <label>
-      Message:<br>
-      <textarea name="message" rows="5" cols="30"></textarea>
-    </label>
-    <br><br>
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="index.html">Accueil</a>
+          <span>/</span>
+          <span class="breadcrumb-current">Contact</span>
+        </nav>
+        <h1 class="page-hero-title">Contactez-nous</h1>
+        <p class="page-hero-subtitle">
+          Une question ? Un projet ? N'hésitez pas à nous contacter.
+          Nous vous répondrons dans les plus brefs délais.
+        </p>
+      </div>
+    </section>
 
-    <button type="submit">Send</button>
-  </form>
+    <!-- Contact Section -->
+    <section class="contact-section" id="devis">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3>Demander un devis gratuit</h3>
+            <form id="contact-form" action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstname">Prénom *</label>
+                  <input type="text" id="firstname" name="firstname" required placeholder="Votre prénom">
+                </div>
+                <div class="form-group">
+                  <label for="lastname">Nom *</label>
+                  <input type="text" id="lastname" name="lastname" required placeholder="Votre nom">
+                </div>
+              </div>
 
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="01 23 45 67 89">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="project-type">Type de projet</label>
+                <select id="project-type" name="project-type">
+                  <option value="">Sélectionnez un type de projet</option>
+                  <option value="construction">Construction neuve</option>
+                  <option value="renovation">Rénovation</option>
+                  <option value="extension">Extension</option>
+                  <option value="terrassement">Terrassement</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Décrivez votre projet *</label>
+                <textarea id="message" name="message" required
+                  placeholder="Décrivez votre projet en quelques mots..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                <span>📨</span>
+                Envoyer ma demande
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info-wrapper">
+            <h3>Nos coordonnées</h3>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <span class="contact-info-icon">📍</span>
+                <div>
+                  <h5>Adresse</h5>
+                  <p>12 Rue du Bâtiment<br>75001 Paris</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-icon">📞</span>
+                <div>
+                  <h5>Téléphone</h5>
+                  <a href="tel:+33123456789">01 23 45 67 89</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-icon">✉️</span>
+                <div>
+                  <h5>Email</h5>
+                  <a href="mailto:contact@batipro.fr">contact@batipro.fr</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="working-hours">
+              <h5>🕐 Horaires d'ouverture</h5>
+              <div class="hours-list">
+                <div class="hours-item">
+                  <span>Lundi - Vendredi</span>
+                  <span>8h00 - 18h00</span>
+                </div>
+                <div class="hours-item">
+                  <span>Samedi</span>
+                  <span>9h00 - 12h00</span>
+                </div>
+                <div class="hours-item">
+                  <span>Dimanche</span>
+                  <span>Fermé</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nous trouver</h2>
+          <p>Venez nous rencontrer à notre bureau</p>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.3414658!3d48.8583701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1234567890"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation BatiPro">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <!-- Footer Main -->
+      <div class="footer-grid">
+        <!-- Column 1: Logo & Description -->
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo">
+            <span class="logo-icon">🏗️</span>
+            <span class="logo-text">Bati<span class="logo-accent">Pro</span></span>
+          </a>
+          <p class="footer-description">
+            Votre partenaire de confiance pour tous vos projets de maçonnerie.
+            Construction, rénovation et extension depuis plus de 15 ans.
+          </p>
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <span>📘</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <span>📷</span>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <span>💼</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title">Liens Rapides</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#devis">Demander un devis</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="footer-col">
+          <h4 class="footer-title">Nos Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Construction neuve</a></li>
+            <li><a href="#">Rénovation</a></li>
+            <li><a href="#">Extension</a></li>
+            <li><a href="#">Terrassement</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="contact-icon">📍</span>
+              <span>12 Rue du Bâtiment, 75001 Paris</span>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <a href="tel:+33123456789">01 23 45 67 89</a>
+            </li>
+            <li>
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:contact@batipro.fr">contact@batipro.fr</a>
+            </li>
+            <li>
+              <span class="contact-icon">🕐</span>
+              <span>Lun - Ven : 8h - 18h</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 BatiPro. Tous droits réservés.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>

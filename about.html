@@ -1,89 +1,317 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Présentation de notre entreprise de bâtiment, notre savoir-faire et nos valeurs.">
-    <title>À propos | BatiPro</title>
+    <meta name="description"
+        content="Découvrez BatiPro, entreprise de maçonnerie avec plus de 15 ans d'expérience. Notre histoire, nos valeurs et notre équipe.">
+    <meta name="keywords" content="maçonnerie, construction, rénovation, BatiPro, bâtiment, maçon, à propos">
+    <meta name="author" content="BatiPro">
+    <title>À propos | BatiPro - Maçonnerie Professionnelle</title>
 
-    <!-- Feuille de style -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-    <!-- En-tête -->
-    <header>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
         <div class="container">
-            <h1>BatiPro</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html" aria-current="page">À propos</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="realisations.html">Réalisations</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🏗️</span>
+                    <span class="logo-text">Bati<span class="logo-accent">Pro</span></span>
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
                 </ul>
+
+                <!-- CTA Button -->
+                <a href="contact.html" class="btn btn-primary nav-cta">
+                    <span class="btn-icon">📞</span>
+                    Devis Gratuit
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span class="hamburger"></span>
+                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Contenu principal -->
-    <main>
-
-        <!-- Section présentation -->
-        <section class="about-intro">
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
             <div class="container">
-                <h2>Qui sommes-nous ?</h2>
-                <p>
-                    Fondée en -178 av. J.-C., notre entreprise accompagne particuliers et professionnels
-                    dans leurs projets de construction, rénovation et aménagement.
+                <nav class="breadcrumb">
+                    <a href="index.html">Accueil</a>
+                    <span>/</span>
+                    <span class="breadcrumb-current">À propos</span>
+                </nav>
+                <h1 class="page-hero-title">Qui sommes-nous ?</h1>
+                <p class="page-hero-subtitle">
+                    Découvrez l'histoire, les valeurs et l'équipe de BatiPro,
+                    votre partenaire de confiance en maçonnerie.
                 </p>
             </div>
         </section>
 
-        <!-- Section histoire / expérience -->
-        <section class="about-history">
+        <!-- About Story Section -->
+        <section class="about-story">
             <div class="container">
-                <h2>Notre expérience</h2>
-                <p>
-                    Forts de plusieurs années d’expérience dans le bâtiment, nous mettons notre
-                    savoir-faire au service de projets durables, solides et conformes aux normes.
+                <div class="about-story-grid">
+                    <div class="about-story-content">
+                        <h2>Notre Histoire</h2>
+                        <p>
+                            Fondée il y a plus de 15 ans, BatiPro est née de la passion d'un artisan
+                            maçon pour son métier et de sa volonté d'offrir des prestations de qualité
+                            à ses clients.
+                        </p>
+                        <p>
+                            Au fil des années, nous avons développé notre expertise et agrandi notre équipe
+                            pour répondre à des projets de plus en plus ambitieux, tout en conservant
+                            l'esprit artisanal qui fait notre force.
+                        </p>
+                        <p>
+                            Aujourd'hui, BatiPro accompagne particuliers et professionnels dans tous leurs
+                            projets de construction, rénovation et extension, avec le même engagement
+                            de qualité et de satisfaction client.
+                        </p>
+                    </div>
+                    <div class="about-story-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop"
+                            alt="Équipe BatiPro sur un chantier">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Valeurs</h2>
+                    <p>Les principes qui guident notre travail au quotidien</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">⭐</div>
+                        <h4>Qualité</h4>
+                        <p>Des finitions soignées et des matériaux de premier choix pour des réalisations durables.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">⏰</div>
+                        <h4>Ponctualité</h4>
+                        <p>Respect des délais annoncés et communication transparente sur l'avancement des travaux.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h4>Écoute</h4>
+                        <p>Une attention particulière à vos besoins pour des solutions sur-mesure adaptées à votre
+                            projet.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🛡️</div>
+                        <h4>Sécurité</h4>
+                        <p>Respect des normes en vigueur et mise en œuvre des meilleures pratiques de sécurité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Équipe</h2>
+                    <p>Des professionnels passionnés à votre service</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop"
+                                alt="Jean Dupont - Fondateur">
+                        </div>
+                        <h4>Jean Dupont</h4>
+                        <p class="team-role">Fondateur & Gérant</p>
+                        <p>Plus de 20 ans d'expérience dans le bâtiment</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop"
+                                alt="Pierre Martin - Chef de chantier">
+                        </div>
+                        <h4>Pierre Martin</h4>
+                        <p class="team-role">Chef de Chantier</p>
+                        <p>Coordination et supervision des projets</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop"
+                                alt="Marie Durand - Responsable Client">
+                        </div>
+                        <h4>Marie Durand</h4>
+                        <p class="team-role">Responsable Client</p>
+                        <p>Votre interlocutrice dédiée</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nos Certifications</h2>
+                    <p>Des garanties pour votre tranquillité d'esprit</p>
+                </div>
+                <div class="certifications-grid">
+                    <div class="certification-item">
+                        <span class="certification-icon">🏅</span>
+                        <span>Qualibat</span>
+                    </div>
+                    <div class="certification-item">
+                        <span class="certification-icon">🌿</span>
+                        <span>RGE</span>
+                    </div>
+                    <div class="certification-item">
+                        <span class="certification-icon">🛡️</span>
+                        <span>Garantie Décennale</span>
+                    </div>
+                    <div class="certification-item">
+                        <span class="certification-icon">📋</span>
+                        <span>Assurance RC Pro</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="cta-section"
+            style="background-color: var(--color-light); padding: var(--spacing-4xl) 0; text-align: center;">
+            <div class="container">
+                <h2>Prêt à démarrer votre projet ?</h2>
+                <p
+                    style="color: var(--color-gray-600); margin: var(--spacing-lg) auto var(--spacing-xl); max-width: 600px;">
+                    Contactez-nous pour discuter de votre projet et obtenir un devis gratuit et personnalisé.
                 </p>
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    <span>📞</span>
+                    Demander un devis gratuit
+                </a>
             </div>
         </section>
-
-        <!-- Section valeurs -->
-        <section class="about-values">
-            <div class="container">
-                <h2>Nos valeurs</h2>
-                <ul>
-                    <li>Qualité et finitions soignées</li>
-                    <li>Respect des délais</li>
-                    <li>Transparence et écoute</li>
-                    <li>Sécurité et conformité</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Section certifications -->
-        <section class="about-certifications">
-            <div class="container">
-                <h2>Certifications & garanties</h2>
-                <p>
-                    Nous disposons des assurances et certifications nécessaires
-                    (garantie décennale, labels, qualifications, etc.).
-                </p>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Pied de page -->
-    <footer>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
         <div class="container">
-            <p>&copy; 2026 - Nom de l'entreprise | Tous droits réservés</p>
+            <!-- Footer Main -->
+            <div class="footer-grid">
+                <!-- Column 1: Logo & Description -->
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🏗️</span>
+                        <span class="logo-text">Bati<span class="logo-accent">Pro</span></span>
+                    </a>
+                    <p class="footer-description">
+                        Votre partenaire de confiance pour tous vos projets de maçonnerie.
+                        Construction, rénovation et extension depuis plus de 15 ans.
+                    </p>
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <span>📘</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <span>📷</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <span>💼</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#devis">Demander un devis</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Construction neuve</a></li>
+                        <li><a href="#">Rénovation</a></li>
+                        <li><a href="#">Extension</a></li>
+                        <li><a href="#">Terrassement</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <span>12 Rue du Bâtiment, 75001 Paris</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <a href="tel:+33123456789">01 23 45 67 89</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">✉️</span>
+                            <a href="mailto:contact@batipro.fr">contact@batipro.fr</a>
+                        </li>
+                        <li>
+                            <span class="contact-icon">🕐</span>
+                            <span>Lun - Ven : 8h - 18h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 BatiPro. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
