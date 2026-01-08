@@ -679,6 +679,239 @@ select {
 }
 
 /* ----------------------------------------
+   Hero Section
+   ---------------------------------------- */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.5;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Hero Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xl);
+    animation: fadeInDown 0.8s ease;
+}
+
+.badge-icon {
+    font-size: var(--text-lg);
+}
+
+/* Hero Title */
+.hero-title {
+    color: var(--color-white);
+    font-size: var(--text-6xl);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.text-accent {
+    color: var(--color-accent);
+    position: relative;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    color: var(--color-gray-300);
+    font-size: var(--text-xl);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto var(--spacing-2xl);
+    animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-3xl);
+    animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.btn-lg {
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    font-size: var(--text-lg);
+}
+
+.hero .btn-outline {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.hero .btn-outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+/* Trust Badges */
+.hero-trust {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+    animation: fadeInUp 0.8s ease 0.8s both;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-normal);
+}
+
+.trust-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+}
+
+.trust-icon {
+    font-size: var(--text-2xl);
+}
+
+.trust-text {
+    text-align: left;
+}
+
+.trust-text strong {
+    display: block;
+    color: var(--color-white);
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+
+.trust-text span {
+    color: var(--color-gray-300);
+    font-size: var(--text-sm);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: var(--spacing-2xl);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-white);
+    opacity: 0.7;
+    animation: bounce 2s infinite;
+}
+
+.scroll-text {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.scroll-arrow {
+    width: 24px;
+    height: 24px;
+    border-right: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
+    transform: rotate(45deg);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* ----------------------------------------
    Responsive Breakpoints
    ---------------------------------------- */
 @media (max-width: 1024px) {
@@ -769,6 +1002,41 @@ select {
         flex-direction: column;
         gap: var(--spacing-md);
         text-align: center;
+    }
+
+    /* Hero Responsive */
+    .hero-title {
+        font-size: var(--text-4xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--text-base);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-lg {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-trust {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .trust-item {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 }
 
